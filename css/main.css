@@ -54,7 +54,7 @@ ul {
     font-size: 0.8em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 2em;
-    list-style:'circle';
+    list-style-type: circle;
     color: #333;
 }
 
