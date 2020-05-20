@@ -14,7 +14,7 @@ nav ul li, footer ul li {
     color: #333;
     margin-right: 20px;
 }
-div.nav li.selected a {
+nav li.selected a {
     color: #FF0000; 
 } 
 a {
