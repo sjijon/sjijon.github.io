@@ -80,7 +80,8 @@ ul.posts li {
     list-style: none;
 }
 
-.column {
+
+  .column {
     float: left;
     width: 50%;
   }
@@ -90,4 +91,21 @@ ul.posts li {
     content: "";
     display: table;
     clear: both;
+  }
+
+  .postercoltxt {
+    float: left;
+    width: 80%;
+  }
+  .postercolimg {
+    float: left;
+    width: 20%;
+  }
+
+
+  div.horizontalgap {
+    float: left;
+    overflow: hidden;
+    height: 1px;
+    width: 0px;
   }
