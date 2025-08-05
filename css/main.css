@@ -1,4 +1,5 @@
 body {
+    border-top: 1px solid #d5d5d5;
     margin: 60px auto;
     width: 80%;
 }
@@ -81,31 +82,31 @@ ul.posts li {
 }
 
 
-  .column {
-    float: left;
-    width: 50%;
-  }
+.column {
+float: left;
+width: 50%;
+}
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
 
-  .postercoltxt {
-    float: left;
-    width: 80%;
-  }
-  .postercolimg {
-    float: left;
-    width: 20%;
-  }
+.postercoltxt {
+float: left;
+width: 80%;
+}
+.postercolimg {
+float: left;
+width: 20%;
+}
 
 
-  div.horizontalgap {
-    float: left;
-    overflow: hidden;
-    height: 1px;
-    width: 0px;
-  }
+div.horizontalgap {
+float: left;
+overflow: hidden;
+height: 1px;
+width: 0px;
+}
