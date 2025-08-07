@@ -82,30 +82,30 @@ ul.posts li {
 
 
 .column {
-float: left;
+    float: left;
 width: 50%;
 }
 
 /* Clear floats after the columns */
 .row:after {
-content: "";
-display: table;
-clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .postercoltxt {
-float: left;
-width: 80%;
+    float: left;
+    width: 80%;
 }
 .postercolimg {
-float: left;
-width: 20%;
+    float: left;
+    width: 20%;
 }
 
 
 div.horizontalgap {
-float: left;
-overflow: hidden;
-height: 1px;
-width: 0px;
+    float: left;
+    overflow: hidden;
+    height: 1px;
+    width: 0px;
 }
