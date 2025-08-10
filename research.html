@@ -3,72 +3,113 @@ layout: default
 title: Research
 ---
 <div class="blurb">
-	<h2>Research</h2>
-
+	<p style="border-bottom: 1px solid #d5d5d5;"></p>
+	<h2>Ongoing projects</h2>
+	<p><strong>Epidemic elimination</strong></p>
 	<p>
-		Lately, I've been working on coupling economic evaluations to epidemic models. I've also been working epidemic eliminaation/reemergence dynamics induced by vaccine hesitancy/fatigue.
+		I'm currently wrapping up a project on epidemic elimination and reemergence dynamics induced by vaccine hesitancy/fatigue or enforce-and-relax vaccination policies, in collaboration with <a href="https://research.pasteur.fr/en/member/romulus-breban/">Romulus Breban</a> (Institut Pasteur, France) and <a href="https://www.rand.org/about/people/v/vardavas_raffaele.html" target="_blank">R. Vardavas</a> (RAND Corporation, United States). I developed a stochastic model of smallpox transmission to estimate the time to eradications (C++, Python). We applied and discussed our results in the context of measles outbreaks and elimination efforts.
 	</p>
+	
+	<!-- 
+	<p><strong>Ecuadorian synthetic population</strong></p>
 
-	<h2>Topics of interest</h2>
+	<p><strong>Agent based infection model in Rust</strong></p>
+	 -->
+	<h2>Some past projects</h2>
+	<!-- iEES -->
 	<div class="row">
-		<div class="column">
-		<p><strong>Mathematical modeling</strong></p>
-			<ul>
-				<li>Mathematical epidemiology</li>
-				<li>Infectious disease modeling</li>
-				<li>Computational epidemiology</li>
-				<li>Epidemic (re)emergence dynamics</li>
-				<li>Game theoretic approaches</li>
-				<li>Bayesian methods</li>
-				<li>Optimal control</li>
-			</ul>
+		<p>
+			<strong>Estimating the date of emergence of epidemic outbreaks, using early case data</strong>
+		<br>
+			<a href="https://doi.org/10.1371/journal.pcbi.1011934" target="_blank">Paper</a> (2024) |  
+			<!-- <a href="https://www.medrxiv.org/content/10.1101/2023.01.09.23284284v2" target="_blank">Preprint</a> | 
+			<a href="https://zenodo.org/doi/10.5281/zenodo.10657737" target="_blank">Zenodo</a> |  -->
+			<a href="https://github.com/sjijon/estimate-emergence-from-data" target="_blank">Code</a> (Julia, R)
+		</p>
+		<div class="column" style="width:30%; padding-right:40px">
+			<p> 
+				We developped a stochastic branching-process model to estimate the date of emergence of epidemic outbreaks, using available case data. We calibrated using data on the first reported sequences of the Alpha variant and then applied the model to different datasets of early COVID-19 reported cases. We compared our estimates with the dates of emergence reported in the literature.
+			</p>
 		</div>
-		<div class="column">
-		<p><strong>Epidemic control and prevention</strong></p>
-			<ul>
-				<li>HIV and other STIs epidemics control</li>
-				<li>Pre-Exposure Prophylaxis</li>
-				<li>Voluntary prevention adoption</li>
-				<li>Vaccine hesitancy</li>
-				<li>Nosocomial SARS-CoV-2 infection</li>
-				<li>SARS-CoV-2 emergence</li>
-				<li>Public health policies</li>
-			</ul>
+		<div class="column" style="width:30%; padding-right:40px">
+			<p> 
+				Our main results show that the date of emergence of an epidemic outbreak can be estimated using early detection data, even when the data is incomplete. We found that our estimates are consistent with the dates of emergence reported in the literature, and that our model is computationally efficient compared to other approaches such as Approximate Bayesian Computation (ABC).
+			</p>
+		</div>
+		<div class="column" style="width:30%;">
+			<p style="text-align: left; font-size: 1em;">
+				<strong>Estimated date of emergence of COVID-19.</strong> 
+				<br>
+				Our model results compared with results from the literature, as well as the results from an ABC model.
+			</p>
+			<a href="files/figures/2024_OriginEstims_COVID-19_B.pdf" target="_blank">
+			<img src="files/figures/2024_OriginEstims_COVID-19_B.pdf" alt="Figure" style="width:100%; height:auto;">
+			</a>
+		</div>
+	</div>
+	
+	<!-- Cnam -->
+	<div class="row">
+		<p>
+			<strong>SARS-CoV-2 infection risk among healthcare workers in quarantine-hospitals</strong>
+			<br>
+			<a href="https://doi.org/10.1038/s41598-022-23428-x" target="_blank">Paper</a> (2022) | 
+			<a href="https://github.com/sjijon/SARS-CoV-2_QuarantineHospitals" target="_blank">Code</a> (R)
+		</p>
+		<div class="column" style="width:30%; padding-right:40px">
+			<p>
+				The aim of this project was to estimate the SARS-CoV-2 infection risk among healthcare workers (HCWs) participating in the quarantine-hospital intervention established by the Egyptian government during the first wave ofthe COVID-19 epidemic. Our model is calibrated using detection data of 3 hospitals, accounts for RT-PCR false negatives and unveils the share of undiagnosed infections.  
+			</p>
+		</div>
+		<div class="column" style="width:30%; padding-right:40px">
+			<p>
+			The model-based incidence rates yielded the per-shift infection probabilities of ~13.7% and 23.8% for Hosp1 and Hosp2, respectively, and ~42.6% for Hosp3. We estimated 45&ndash;59% of infections were undiagnosed. Risk tended to be higher in non-ICU units in two hospitals but higher in ICU in the third hospital, which operated as a quarantine hospital for shorter time and shorter shifts than the other two hospitals.
+			</p>
+		</div>
+		<div class="column" style="width:30%;">
+			<p style="text-align: left; font-size: 1em;">
+				<strong> Case data of three Egyptian COVID-19 quarantine-hospitals.</strong> 
+				<br>
+				HCWs worked 2-week shifts in two hospitals and 1-week shifts in the third.
+			</p>
+			<a href="files/figures/EpiCurves.png" target="_blank">
+			<img src="files/figures/EpiCurves.png" alt="Figure" style="width:100%;">
+			</a>
 		</div>
 	</div>
 
-	<br>
-	<h2>My journey</h2>
-	<p>
-	Born in Quito-Ecuador, I obtained my bachelor degree on Mathematics at
-	the <a href="https://math.epn.edu.ec" target="_blank">Escuela Politécnica Nacional</a> (EPN), in Quito. 
-	I moved to Paris in 2013 to enroll the Master's degree program in Applied Mathematics,
-	MathBio speciality, at <a href="https://www.ljll.math.upmc.fr/MathModel/presentation/mbio.html" target="_blank">Sorbonne Université</a> (SU), 
-	the former Pierre & Marie Curie University (UPMC) or Paris 6 University.
-	</p>
-	<p>
-	I did my PhD at <a href="https://www.iplesp.upmc.fr/en/team/SUMO" target="_blank">Pierre Louis Institute of Epidemiology
-	and Public Health</a> (IPLESP), a joint research and health unit from SU and Inserm, 
-	supervised by <a href="https://scholar.google.com/citations?user=aw2YhuEAAAAJ&hl=en" target="_blank">Virginie Supervie</a> (Inserm) and <a href="https://research.pasteur.fr/en/member/romulus-breban/">Romulus Breban</a> (Institut Pasteur). 
-	My doctoral research project concerned the mathematical modeling of infectious diseases, 
-	accounting for voluntary adoption of preventive methods, using a game-theoretical approach. 
-	Two applications were explored: i) voluntary vaccination against chilhood infectious diseases (such as measles) and ii) pre-exposure prophylaxis uptake to prevent HIV infection among men
-	who have sex with men at high risk of HIV infection. I defended my thesis in July, 2021.
-	</p>
+	<!-- PhD -->
+	<div class="row">
+		<p>
+			<strong>HIV elimination under voluntary PrEP adoption</strong>
+			<br>
+			<a href="https://doi.org/10.1016/j.vaccine.2017.08.040" target="_blank">Paper</a> (2021) | 
+			<a href="/contact.html" target="_blank">Code</a> (Matlab)
+		</p>
+		<div class="column" style="width:30%; padding-right:40px">
+			<p>
+				My PhD research project focused on infectious diseases models accounting for voluntary adoption of preventive methods, using a game-theoretical approach. One of the applications we explored was pre-exposure prophylaxis uptake to prevent HIV infection among men who have sex with men at high risk of HIV infection. This project contributed to the analyses of the impact on PrEP in target populations at early estages of PrEP rollout in Paris (2015), and was developeed in the context the WHO elimination goals for 2030.
+			</p>
+		</div>
+		<div class="column" style="width:30%; padding-right:40px">
+			<p>
+				Our model was calibrated to reproduce HIV epidemic numbers for the population of MSM in Paris. The simulations return PrEP uptake resulting from the utility maximisation of individuals. We found that PrEP uptake can be caracterised by a three-region behavior: when PrEP is perceived as too costly, individuals do not use PrEP (region III); with decreasing perceived cost, uptake increases (region II) and HIV elimination in the long term can be reached if PrEP coverage is above a certain threshold (region III, stripes), which requires individuals to perceive PrEP cost to be low, even under very high levels of effectiveness. However, we found that there is no equilibrium in region III, which means that the system is unstable and continous efforts to maintain cost perceived as low are required to reach and maintain elimination status.
+			</p>
+		</div>
+		<div class="column" style="width:30%">
+			<p style="text-align: left; font-size: 1em;">
+				<strong>PrEP coverage resulting from utility maximisation.</strong> 
+				<br>
+				Here, PrEP coverage is depicted as a function of PrEP effectiveness and the cost perceived for PrEP relative to the cost of being treated for HIV in case of infection.
+			</p>
+			<a href="files/figures/2021_HIV_Fig1.pdf" target="_blank">
+			<img src="files/figures/2021_HIV_Fig1.pdf" alt="Figure" style="width:100%;">
+			</a>
+		</div>
+	</div>
 	
-	<p>
-	I was a postdoctoral researcher at the <a href="https://mesurs.cnam.fr/?lang=fr" target="_blank">Modeling, epidemiology
-	and monitoring of health risks</a> (MESuRS) lab, at Cnam, from September 2020 to December 2021.
-	I worked with <a href="https://sites.google.com/site/kvnjean/" target="_blank">Kévin Jean</a> and <a href="https://scholar.google.com/scholar?hl=fr&as_sdt=0%2C5&q=laura+temime&btnG=&oq=Laura+temi" target="_blank">Laura Temime</a> on mathematical modeling of the nosocomial spreading of COVID-19.
-	The aim of our project was to estimate the SARS-CoV-2 infection risk among healthcare
-	workers participating in the quarantine-hospital intervention established by
-	the Egyptian government during the first wave ofthe COVID-19 epidemic.
-	</p>
-
-	<p>
-	I was a postdoctoral researcher at the <a href="https://iees-paris.fr/teams/interaction-networks/" target="_blank">Institute of ecology and environmental sciences of Paris</a> (IEES), a joint research unit from CNRS and SU. I worked with <a href="https://www.normalesup.org/~fdebarre/" target="_blank">Florence Débarre</a> (CNRS), <a href="https://sites.google.com/site/francoisblanquart/home" target="_blank">François Blanquart</a> (Collège de France) and <a href="https://czuppon.net" target="_blank">Peter Czuppon</a> (University of Münster) studying the dynamics of early epidemics. We developped a model aiming to estimate the date of emergence of epidemic outbreaks, using available case data. We applied our model to the COVID-19 epidemic, using i) data on the first reported sequences of the Alpha variant and ii) data on early COVID-19 reported cases.
-	</p>
 <br>
+
 <p style="font-size:10px;text-align:center;">
 		Updated: January, 2025.
 	</p>
