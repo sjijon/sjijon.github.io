@@ -83,7 +83,7 @@ ul.posts li {
 
 .column {
     float: left;
-width: 50%;
+    width: 50%;
 }
 
 /* Clear floats after the columns */
@@ -108,4 +108,23 @@ div.horizontalgap {
     overflow: hidden;
     height: 1px;
     width: 0px;
+}
+
+.about-cols {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+}
+.text-col {
+    width: 70%;
+    flex-shrink: 0;
+}
+.photo-col {
+    width: 25%;
+    flex-shrink: 0;
+    text-align: right;
+}
+.photo-col img {
+    max-width: 100%;
+    height: auto;
 }
